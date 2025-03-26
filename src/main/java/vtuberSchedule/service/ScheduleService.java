@@ -12,9 +12,11 @@ public class ScheduleService {
 		this.repository = repository;
 	}
 	
+	// 전체 데이터 찾기
 	public List<Schedule> getAllSchedules() {
 		return repository.findAll();
 	}
 	
+	// 특정 데이터 찾기
 	// 나중에 추가 비즈니스 로직 구현하기!
 }

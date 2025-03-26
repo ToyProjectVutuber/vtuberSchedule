@@ -21,7 +21,7 @@ dependencies {
     implementation("javax.persistence:javax.persistence-api:2.2")
     implementation("org.springframework.boot:spring-boot-starter-data-jpa")
     implementation("org.springframework.boot:spring-boot-starter-web")
-}
+    implementation("org.jsoup:jsoup:1.15.4")}
 
 tasks.test {
     useJUnitPlatform()

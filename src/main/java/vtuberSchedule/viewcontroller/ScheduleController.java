@@ -20,6 +20,5 @@ public class ScheduleController {
 		List<Schedule> schedules = service.getAllSchedules();
 		model.addAttribute("schedules", schedules);
 		return "scheduleView";
-		
 	}
 }

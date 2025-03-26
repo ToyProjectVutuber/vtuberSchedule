@@ -12,6 +12,7 @@ import javax.persistence.Table;
 @Data
 public class Schedule {
 	@Id
+	@Column(name = "id")
 	private Long id;
 	
 	@Column(name = "vtuberName")

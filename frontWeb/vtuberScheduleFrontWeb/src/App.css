@@ -1,74 +1,31 @@
-#root {
-  max-width: 1280px;
+.calendar-container {
+  max-width: 400px;
   margin: 0 auto;
-  padding: 2rem;
   text-align: center;
+  font-family: sans-serif;
+  border: 3px solid red;
 }
 
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70em;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 4px;
+  margin-top: 10px;
+  border: 3px solid blue;
+  width: 70em;
+  height: 70em;
 }
 
-.timetable {
-    width: 80%;
-    margin: 0 auto;
-    padding: 20px;
-    text-align: center;
-}
-h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-}
-.calendar {
-    display: grid;
-    grid-template-columns: repeat(7,  1fr);
-    grid-gap: 10px;
-}
-.day {
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    background-color: #f9f9f9;
-}
-.day-header {
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-.day-content {
-    font-size: 0.9rem;
-}
-.day-content ul {
-    list-style-type: none;
-    padding: 0;
-}
-.day-content li {
-    margin-bottom: 5px;
-}
-.day:hover {
-    background-color: #f1f1f1;
-}
-.selectedModal {
-    position: absolute;
-    width: 500px;
-    height: 500px;
-    top: 100px;
-    background-color: red;
+.calendar-day-name,
+.calendar-day {
+  padding: 10px;
+  border: 1px solid #ccc;
+  min-height: 40px;
 }

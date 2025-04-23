@@ -13,6 +13,8 @@ repositories {
 }
 
 dependencies {
+    implementation("org.springframework.boot:spring-boot-starter-thymeleaf")
+    implementation("org.springframework.boot:spring-boot-starter-web-services")
     compileOnly("org.projectlombok:lombok:1.18.24")
     annotationProcessor("org.projectlombok:lombok:1.18.24")
     testImplementation(platform("org.junit:junit-bom:5.10.0"))
@@ -21,7 +23,11 @@ dependencies {
     implementation("javax.persistence:javax.persistence-api:2.2")
     implementation("org.springframework.boot:spring-boot-starter-data-jpa")
     implementation("org.springframework.boot:spring-boot-starter-web")
-    implementation("org.jsoup:jsoup:1.15.4")}
+    implementation("org.jsoup:jsoup:1.15.4")
+    implementation("org.springframework.boot:spring-boot-devtools")
+    implementation("org.springframework.boot:spring-boot-starter-validation")
+    runtimeOnly("org.postgresql:postgresql")
+}
 
 tasks.test {
     useJUnitPlatform()
